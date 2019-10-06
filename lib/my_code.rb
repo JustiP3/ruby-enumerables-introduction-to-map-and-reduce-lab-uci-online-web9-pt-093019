@@ -58,23 +58,40 @@ end
 
 
 def reduce_to_all_true(source_array)
-  i = 0 
-  t_status = true 
-  while i < source_array.length do 
-    if (source_array[i]!=true)
-      t_status = false 
-    end
-  end
-  return t_status
+	i = 0 
+	t_counter = 0
+	f_counter = 0 
+	while i < source_array.length do 
+		if (source_array[i]==true)
+		t_counter += 1 
+		else
+		f_counter += 1 
+		end
+	end
+  
+  if f_counter > 0 
+  return false 
+  else
+  return true
+  end 
+  
 end
 
 def reduce_to_any_true(source_array)
 	i = 0 
-	t_status = false 
+	t_counter = 0
+	f_counter = 0 
 	while i < source_array.length do 
-	  if (source_array[i] == true)
-	  t_status = true 
-	  end 
-	end 
-	return t_status
+		if (source_array[i]==true)
+		t_counter += 1 
+		else
+		f_counter += 1 
+		end
+	end
+  
+  if t_counter > 0 
+  return true 
+  else
+  return false 
+  end 
 end
