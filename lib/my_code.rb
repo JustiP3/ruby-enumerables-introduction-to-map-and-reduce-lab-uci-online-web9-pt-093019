@@ -67,6 +67,7 @@ def reduce_to_all_true(source_array)
 		else
 		f_counter += 1 
 		end
+		i +=1 
 	end
   
   if f_counter > 0 
@@ -87,6 +88,7 @@ def reduce_to_any_true(source_array)
 		else
 		f_counter += 1 
 		end
+		i += 1 
 	end
   
   if t_counter > 0 
