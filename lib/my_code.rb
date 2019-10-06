@@ -62,7 +62,7 @@ def reduce_to_all_true(source_array)
 	t_counter = 0
 	f_counter = 0 
 	while i < source_array.length do 
-		if (source_array[i]==true)
+		if (source_array[i]!=false) 
 		t_counter += 1 
 		else
 		f_counter += 1 
